@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CraftyJS Game</title>
+    <script type="text/javascript" src="lib/crafty.js"></script>
+    <script type="text/javascript" src="lib/tiledmapbuilder/create_mocks_module.js"></script>
+    <script type="text/javascript" src="lib/tiledmapbuilder/tiledmapbuilder.js"></script>
+    <script type="text/javascript" src="assets/dungeon.js"></script>
+    <script type="text/javascript" src="src/components.js"></script>
+    <script type="text/javascript" src="src/scenes.js"></script>
+    <script type="text/javascript" src="src/astar.js"></script>
+    <script type="text/javascript" src="src/game.js"></script>
+    <script>
+      window.addEventListener('load', Game.start);
+    </script>
+    <style>
+      body, html { margin:0; padding: 0; overflow: hidden; background: black; }
+      #game { border: 2px solid black; margin: 5px auto; color: white }
+      #pathCost { text-align: center; color: white }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <p id="pathCost"></p>
+  </body>
+</html>

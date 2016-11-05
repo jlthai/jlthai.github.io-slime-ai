@@ -1,0 +1,38 @@
+Documentation
+
+Components.js
+  This file contains all of the components to be included into entities
+  Each component creates some functionality or set of variables to be added
+  onto an entity.
+
+  'Grid' Component
+    + Variables
+    establishes a width and height equal to the tilesize
+
+    + Functions
+      at:
+        Sets / gets the x and y coordinates for where the entity is
+        with respect to tilesize.
+
+        ex. with 32x32 tiles, an entity at 64, 64 is at x: 2, y: 2
+
+
+
+
+  'Actor' Component
+    + Components
+    gives entities with the actor component the 2D, Canvas, and Grid components
+    this helps shorten the component list since most entities need these components.
+
+
+
+
+  'AnimatedWalking' Component
+    .animate is called with an animation id (i.e. PlayerMovingUp) on the entity
+    itself (this.animate(...)).
+    This component only works on sprite sheets that have animations laid out in
+    the following order by rows: Player
+
+    + Components
+    Spriteanimation to allow quick switching of sprites for animation effect
+
